@@ -1,0 +1,80 @@
+:root {
+    --font-family: 'Poppins';
+    --font-size: 0.9375rem;
+    --clr-salmon: #EA5454;
+    --clr-aqua: #44D3D2;
+    --clr-mustard: #FCAE4A;
+    --clr-sky-blue: #549EF2;
+    --clr-dark-blue: #4D4F62;
+    --clr-dark-blue-lighter: rgba(77, 79, 98, 0.5);
+    --title-font-size: 1.5rem;
+    --subtitle-font-size: 1.25rem;
+    --fs-card-paragraph: 0.8125rem;
+    --fw-extra-light: 200;
+    --fw-regular: 400;
+
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: var(--font-size);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family), sans-serif;
+    color: var(--clr-dark-blue);
+
+}
+
+main {
+    max-width: 375px;
+    margin: 85px auto;
+}
+
+p {
+    color: var(--clr-dark-blue-lighter)
+}
+
+h1 {
+    font-size: var(--title-font-size);
+}
+
+h2 {
+    font-size: var(--subtitle-font-size);
+}
+
+.container {
+    margin-inline: 32px;
+}
+
+.font-extra-light {
+    font-weight: var(--fw-extra-light);
+}
+
+.card {
+    border-top: 0.5rem solid var(--border-color);
+    border-radius: 0.5rem;
+    min-height: 222px;
+    padding: 28px;
+    box-shadow: 0 15px 30px -11px rgba(131, 166, 210, 0.50);
+    margin-bottom: 25px;
+}
+
+.card p {
+    font-size: var(--fs-card-paragraph);
+}
+
+.card img {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.spacer {
+    height: 76px;
+}
