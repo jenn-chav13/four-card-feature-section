@@ -8,6 +8,7 @@
     --clr-dark-blue: #4D4F62;
     --clr-dark-blue-lighter: rgba(77, 79, 98, 0.5);
     --title-font-size: 1.5rem;
+    --title-font-size__desktop: 2.25rem;
     --subtitle-font-size: 1.25rem;
     --fs-card-paragraph: 0.8125rem;
     --fw-extra-light: 200;
@@ -77,4 +78,69 @@ h2 {
 
 .spacer {
     height: 76px;
+}
+
+@media (min-width: 800px) {
+
+    h1 {
+        font-size: var(--title-font-size__desktop);
+    }
+    .heading-block {
+        width: 540px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    main {
+        max-width: 1440px;
+    }
+    .container {
+        max-width: 1440px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+                "one two1 three"
+                "one two2 three";
+
+        grid-gap: 30px;
+    }
+
+    .card {
+        margin: 0;
+        max-width: 350px;
+    }
+    .card:nth-child(1) {
+        grid-area: one;
+        align-self: center;
+    }
+
+    .card:nth-child(4) {
+        grid-area: three;
+        align-self: center;
+    }
+
+    .card:nth-child(2) {
+        grid-area: two1;
+    }
+
+    .card:nth-child(3) {
+        grid-area: two2;
+    }
+
+    .font-extra-light {
+        display: block;
+    }
+
+    .spacer {
+        height: 64px;
+    }
+
+
 }
